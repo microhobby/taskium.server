@@ -1,0 +1,12 @@
+[Unit]
+Description=Taskium Server
+
+[Service]
+WorkingDirectory=/home/castello/taskium
+Environment="TASKIUM_STORAGE_ROOT=/mnt/factory"
+PassEnvironment=TASKIUM_STORAGE_ROOT
+ExecStart=/home/castello/taskium/taskium.server
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

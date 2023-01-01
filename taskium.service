@@ -5,6 +5,8 @@ Description=Taskium Server
 WorkingDirectory=/home/castello/taskium
 Environment="TASKIUM_STORAGE_ROOT=/mnt/factory"
 PassEnvironment=TASKIUM_STORAGE_ROOT
+User=castello
+Group=sudo
 ExecStart=/home/castello/taskium/taskium.server
 Restart=always
 
